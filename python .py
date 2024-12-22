@@ -30,7 +30,7 @@ Enter second value: 200
 189
 196
 
-#rotate element of a list (e.g[1,2,3,4] become a [4,1,2,3]
+# program forrotate element of a list (e.g[1,2,3,4] become a [4,1,2,3]
 def rotate_list(x):
     if x:
         x.insert(0,x.pop()) #pop is used to remove last element in list
