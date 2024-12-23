@@ -50,3 +50,51 @@ for key in m:
         pass
 print(m)
 out put: {'elex': 88, 'comp': 90, 'stat': 70}
+#fibonacci series upto n term
+def fibo_seq(n):
+    if n<0:
+        print("enter number")
+    elif n==0:
+        return 0
+    elif n==1 or n==2:
+        return 1
+    else:
+        return fibo_seq(n-1)+fibo_seq(n-2)
+print(fibo_seq(9))
+output:34
+#pyramid pattern using nested loop
+x=int(input("Enter the number of rows"))
+for i in range(1,x+1):  #i for rows
+    for j in range(x - i): #j for column
+        print(" ",end="")
+    for k in range(2 * i - 1):   # for star print
+        print("*",end="")
+    print()
+output:Enter the number of rows 5
+    *
+   ***
+  *****
+ *******
+*********
+#to count number of tralings zeros in the factorial of number
+def zeros(n):
+    count=0
+    while n>=5:
+        n//=5
+        count += n
+    return count
+
+x=int(input("enter number"))
+trailing_zeros=zeros(x)
+print( f" the number of trailing zeros in {x}! is {trailing_zeros}")
+output:enter number 5
+ the number of trailing zeros in 5! is 1
+#reverse the string without using built in function
+my_string=("Good morning")
+str=""
+for i in my_string:
+    str=i+str
+    
+print("Reversed string:",str)
+output:
+Reversed string: gninrom dooG
